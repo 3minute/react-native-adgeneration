@@ -136,7 +136,7 @@
     if ([self.locationType isEqualToString:@"2"]) {
         float ratio = MIN([self.bannerWidth floatValue]/300,[self.bannerHeight floatValue]/250);
         // セルの全体View
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,0,300*ratio,250*ratio)];
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(([self.bannerWidth floatValue]-300*ratio)/2,0,300*ratio,250*ratio)];
         
         // 左部：アイコン、タイトル、動画View
         UIView *imageView = [[UIView alloc] initWithFrame:CGRectMake(0,0,300*ratio,195*ratio)];
@@ -286,7 +286,7 @@
     if ([self.locationType isEqualToString:@"2"]) {
         float ratio = MIN([self.bannerWidth floatValue]/300,[self.bannerHeight floatValue]/250);
         // セルの全体View
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0,0,300*ratio,250*ratio)];
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(([self.bannerWidth floatValue]-300*ratio)/2,0,300*ratio,250*ratio)];
         
         // 左部：アイコン、タイトル、動画View
         UIView *imageView = [[UIView alloc] initWithFrame:CGRectMake(0,0,300*ratio,195*ratio)];
